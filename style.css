@@ -1,0 +1,106 @@
+:root {
+    --bg-color: #0f172a;
+    --panel-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --accent: #3b82f6;
+    --hit: #22c55e;
+    --stand: #ef4444;
+    --double: #0ea5e9;
+    --split: #a855f7;
+    --surrender: #f59e0b;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: var(--panel-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    color: var(--accent);
+}
+
+.seccion-cartas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.crupier-seccion {
+    grid-template-columns: 1fr;
+}
+
+.input-grupo {
+    display: grid;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+}
+
+select {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.resultado-panel {
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    background: #334155;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+/* Clases de estado */
+.res-hit { background-color: var(--hit); }
+.res-stand { background-color: var(--stand); }
+.res-double { background-color: var(--double); }
+.res-split { background-color: var(--split); }
+.res-surrender { background-color: var(--surrender); }

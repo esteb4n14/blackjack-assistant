@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia Pro Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Estrategia de Blackjack</h1>
+        
+        <div class="seccion-cartas crupier-seccion">
+            <div class="input-grupo">
+                <label>Carta del Crupier:</label>
+                <select id="dealer">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10, J, Q, K</option>
+                    <option value="11">As (A)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="seccion-cartas">
+            <div class="input-grupo">
+                <label>Tu Carta 1:</label>
+                <select id="player1">
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option>
+                    <option value="8">8</option><option value="9">9</option>
+                    <option value="10">10, J, Q, K</option><option value="11">As (A)</option>
+                </select>
+            </div>
+            <div class="input-grupo">
+                <label>Tu Carta 2:</label>
+                <select id="player2">
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option>
+                    <option value="6">6</option><option value="7">7</option>
+                    <option value="8">8</option><option value="9">9</option>
+                    <option value="10">10, J, Q, K</option><option value="11">As (A)</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="btnAnalizar">Analizar Jugada</button>
+
+        <div id="resultado" class="resultado-panel">--</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
